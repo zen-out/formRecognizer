@@ -5,7 +5,8 @@ const endpoint = process.env.ENDPOINT;
 const key = process.env.KEY; 
 
   // sample document
-  const formUrl = "https://raw.githubusercontent.com/Azure-Samples/cognitive-services-REST-api-samples/master/curl/form-recognizer/sample-layout.pdf"
+  // const formUrl = "https://raw.githubusercontent.com/Azure-Samples/cognitive-services-REST-api-samples/master/curl/form-recognizer/sample-layout.pdf"
+  const formUrl = "https://raw.githubusercontent.com/zen-out/formRecognizer/master/samplePdf.pdf"
 
   async function main() {
     const client = new DocumentAnalysisClient(endpoint, new AzureKeyCredential(key));
